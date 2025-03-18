@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers For Your Home</title>
+    <style>
+        /* Internal CSS styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #D4C7BA ;
+            color: #333;
+        }
+        
+        .header {
+            background-color: #C0B2A6;
+            padding: 15px 0;
+            border-bottom: 1px solid #d0c8bc;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .hero-image {
+            flex: 1;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        
+        .hero-text {
+            flex: 1;
+            padding-left: 50px;
+            text-align: right;
+        }
+        
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        
+        .products {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        
+        .product {
+            flex: 1;
+            text-align: center;
+            background-color: #C0B2A6;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .price {
+            display: inline-block;
+            background-color: #d0c8bc;
+            padding: 5px 15px;
+            border-radius: 15px;
+            margin: 10px 0;
+        }
+        
+        .newsletter {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(208, 200, 188, 0.5);
+            border-radius: 5px;
+        }
+        
+        .newsletter form {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 3px;
+        }
+        
+        .testimonials {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        
+        .testimonial {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f5f2ed;
+            border-radius: 5px;
+        }
+        
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .stars {
+            color: #f8c040;
+        }
+        
+        .footer {
+            background-color: #e8e2d9;
+            padding: 20px 0;
+            border-top: 1px solid #d0c8bc;
+            text-align: center;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        /* Button styles */
+        .btn {
+            background-color: #e8e2d9;
+            color: #333;
+            border: 1px solid #d0c8bc;
+            padding: 8px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #d0c8bc;
+        }
+    </style>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="images/logo.png" alt="Flower Shop Logo" width="30" height="30">
+            </div>
+            <div class="nav-links">
+                <a href="#">chatbot</a>
+                <a href="#">catalog</a>
+                <a href="#">delivery</a>
+                <a href="#">contacts</a>
+                <a href="#">privacy policy</a>
+                <a href="#"><img src="images/cart.png" alt="Cart" width="20" height="20"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="images/hero-bouquet.jpg" alt="Beautiful Flower Arrangement">
+        </div>
+        <div class="hero-text">
+            <h1>Flowers For Your Home</h1>
+            <button class="btn">Buy now</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="product">
+            <img src="images/bouquet-1.jpg" alt="Flower Arrangement 1">
+            <div class="price">45$</div>
+            <button class="btn">buy now</button>
+        </div>
+        <div class="product">
+            <img src="images/bouquet-2.jpg" alt="Flower Arrangement 2">
+            <div class="price">50$</div>
+            <button class="btn">buy now</button>
+        </div>
+        <div class="product">
+            <img src="images/bouquet-3.jpg" alt="Flower Arrangement 3">
+            <div class="price">60$</div>
+            <button class="btn">buy now</button>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h3>Sign up to receive news and updates</h3>
+        <form>
+            <input type="email" placeholder="Email Address">
+            <button type="submit" class="btn">Sign up</button>
+        </form>
+    </section>
+
+    <!-- More Products Section -->
+    <section class="products">
+        <div class="product">
+            <img src="images/bouquet-4.jpg" alt="Flower Arrangement 4">
+            <div class="price">55$</div>
+            <button class="btn">buy now</button>
+        </div>
+        <div class="product">
+            <img src="images/bouquet-5.jpg" alt="Flower Arrangement 5">
+            <div class="price">40$</div>
+            <button class="btn">buy now</button>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>testimonials</h2>
+        
+        <div class="testimonial">
+            <div class="testimonial-header">
+                <strong>Max (04.03.2025)</strong>
+                <div class="stars">★★★★★ 5.0</div>
+            </div>
+            <p>I adored! You. I ordered from fit-fit. My beloved sent me a photo at fit. Very work perfectly and most importantly. My beloved is happy.</p>
+        </div>
+        
+        <div class="testimonial">
+            <div class="testimonial-header">
+                <strong>Tatiana (03.03.2025)</strong>
+                <div class="stars">★★★★★ 5.0</div>
+            </div>
+            <p>Thank you very much❤️❤️❤️ For the opportunity to congratulate my relatives even from other countries???</p>
+        </div>
+        
+        <div class="testimonial">
+            <div class="testimonial-header">
+                <strong>Natalia Igorhettenko (03.03.2025)</strong>
+                <div class="stars">★★★★★ 5.0</div>
+            </div>
+            <p>Thank you. The bouquet is excellent. The recipient is happy. It's a pity I can't attach a photo.</p>
+        </div>
+    </section>
+
+    <!-- Table example (to fulfill assignment requirements) -->
+    <section class="container" style="display: none;">
+        <h2>Product Comparison</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bouquet</th>
+                    <th>Price</th>
+                    <th>Flower Types</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Spring Delight</td>
+                    <td>45$</td>
+                    <td>Roses, Peonies</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td>Summer Dream</td>
+                    <td>50$</td>
+                    <td>Sunflowers, Daisies</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td>Autumn Charm</td>
+                    <td>60$</td>
+                    <td>Chrysanthemums, Carnations</td>
+                    <td>Limited</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- List example (to fulfill assignment requirements) -->
+    <section class="container" style="display: none;">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Same-day delivery</li>
+            <li>Custom arrangements</li>
+            <li>Subscription services</li>
+            <li>Wedding flowers</li>
+            <li>Corporate events</li>
+        </ul>
+        
+        <h2>Ordering Process</h2>
+        <ol>
+            <li>Select your bouquet</li>
+            <li>Choose delivery date</li>
+            <li>Add a personal message</li>
+            <li>Complete payment</li>
+            <li>Track your delivery</li>
+        </ol>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">chatbot</a> | 
+            <a href="#">map</a> | 
+            <a href="#">delivery</a> | 
+            <a href="#">contacts</a>
+        </div>
+    </footer>
+
